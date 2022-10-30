@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import abi from "../utils/abi.json";
 import { ethers } from "ethers";
 
-const contractAddress = "";
+const contractAddress = "0xf2bE234dBE2E40D386AF3060F52AD7A5183F5916";
 
 export default function Home() {
   const [address, setAddress] = useState("");

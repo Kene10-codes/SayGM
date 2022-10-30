@@ -31,8 +31,8 @@ export default function GmForm({ address, gmContract }) {
       console.log("updated");
       setPrompt("");
       setAnswerList([]);
-      const getPrompt = await gmContract.getPrompt();
-      setPrompt(getPrompt);
+      // const getPrompt = await gmContract.getPrompt();
+      // setPrompt(getPrompt);
     } catch (error) {
       console.log(error);
     }
@@ -45,8 +45,8 @@ export default function GmForm({ address, gmContract }) {
 
   useEffect(() => {
     const getPromptandAnswers = async () => {
-      const getPrompt = await gmContract.getPrompt();
-      setPrompt(getPrompt);
+      // const getPrompt = await gmContract.getPrompt();
+      // setPrompt(getPrompt);
       const getAnswers = await gmContract.getAnswers();
       setAnswerList(getAnswers);
     };
